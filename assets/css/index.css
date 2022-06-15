@@ -2,13 +2,7 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.cabecalho {
-    align-items: center;
-    background-color: rgb(243, 224, 103);
-    display: flex;
-    height: 60px;
-    
-}
+
 .cabecalho__titulo {
     color: rgb(1, 1, 1);
     display: inline-block;
@@ -16,6 +10,14 @@ body {
     font-size: 1.8rem;
     margin-left: 3%;
     
+}
+
+.cadastre-se{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:10px;
+    text-decoration: none;
+    color: initial;
+    font-size: 1.2rem;
 }
 
 .container {

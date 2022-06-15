@@ -1,9 +1,11 @@
 <?php
 
-$pdo = new PDO('mysql:localhost;dbname=db_curso_web','root','');
-$stmt = $pdo->query('select * from tb_cursos');
-$resultado = $stmt->fetchAll();
-print_r($resultado);
+$pdo = new PDO('mysql:host=localhost;dbname=db_de_a_nota','root','');
+$stmt = $pdo->prepare('select * from tb_adm');
+$stmt->execute();
+$result = $stmt->fetchAll();
+
+print_r($result);
 
 
 

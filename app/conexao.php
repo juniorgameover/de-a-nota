@@ -7,7 +7,7 @@ class Conexao {
 
     public function conectar(){
         try {
-            $conexao = new PDO("mysql:$this->servidor;dbname=$this->nomeBanco","$this->usuario","$this->senha"); 
+            $conexao = new PDO("mysql:host=$this->servidor;dbname=$this->nomeBanco","$this->usuario","$this->senha"); 
             return $conexao;
         } catch (PDOexception $e) {
             echo "Conexão falhou ". $e->getMessage();

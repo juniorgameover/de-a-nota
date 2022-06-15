@@ -9,11 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
     <title>Dê a Nota | home</title>
 </head>
 <body>
     <header class="cabecalho">
         <h1 class="cabecalho__titulo"><span>&#10004; </span>Dê a Nota</h1>
+        <a href="#" class="cadastre-se">Cadastre-se</a>
+        
     </header>
 
     <main class="container">
@@ -27,7 +30,7 @@
                     <input type="password"  name="senha" class="input-senha">
                     <input class="botao-entrar" type="submit" name="entrar" value="Entrar">
                 </form>
-        
+            
         </div>
 
     </main>
