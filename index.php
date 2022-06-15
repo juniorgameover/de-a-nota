@@ -25,9 +25,9 @@
         <div class="janela-login">
                 <form class="janela-login__form" method="POST" action="./app/autentica_bk.php">
                     <label for="usuario" class="label-usuario">Usuário</label>
-                    <input type="text" class="input-usuario" name="usuario">
+                    <input type="text" class="input-usuario" name="usuario" required>
                     <label for="senha" class="label-senha">Senha</label>
-                    <input type="password"  name="senha" class="input-senha">
+                    <input type="password"  name="senha" class="input-senha" required>
                     <input class="botao-entrar" type="submit" name="entrar" value="Entrar">
                 </form>
             

@@ -19,7 +19,7 @@ class Conexao {
         $conexao = $this->conectar();
         $stmt = $conexao->prepare($query);
         $stmt->execute();
-        $result = $stmt->fetchAll();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $result;
 
     }
