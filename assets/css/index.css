@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.cabecalho {
+    align-items: center;
+    background-color: rgb(243, 224, 103);
+    display: flex;
+    height: 60px;
+    
+}
+.cabecalho__titulo {
+    color: rgb(1, 1, 1);
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    margin-left: 3%;
+    
+}
+
+.container {
+    background: url(../img/fundo-tela-login.png);
+    background-size: 300px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.titulo-login {
+    line-height: 100px;
+    font-family: 'Trebuchet MS',  sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.janela-login {
+    padding: 10px;
+    border: 2px solid rgb(255, 234, 73);
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    /*box-sizing: border-box;*/
+    background-color: rgba(255, 255, 255, .9);
+
+
+
+}
+
+.janela-login__form{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+}
+
+.label-usuario{
+    align-self: center;
+    grid-column: 1;
+    grid-row: 1 / 2;
+    font-family: 'Trebuchet MS',  sans-serif;
+    
+
+}
+
+.input-usuario, .input-senha {
+    align-self: center;
+    justify-self: center;
+    border: none;
+    background-color: rgb(255, 247, 190);
+    height: 25px;
+    width: 80%;
+}
+
+.label-senha{
+    grid-column: 1;
+    grid-row: 2 / 3;
+    align-self: center;
+    font-family: 'Trebuchet MS',  sans-serif;
+}
+
+.botao-entrar {
+    align-self: center;
+    background-color: rgb(255, 234, 73);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS',  sans-serif;
+    font-size: 1.2rem;
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+    justify-self: center;
+    padding: 5px;
+    width: 50%;
+
+    
+}
+

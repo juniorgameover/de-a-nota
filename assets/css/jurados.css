@@ -1,0 +1,49 @@
+.container-principal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.secao-cadastrarJurado {
+    display: none;
+    min-width: 50%;
+    margin-top: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+   
+}
+
+.mostra-form{
+    display: initial;
+    
+}
+
+.secao-cadastrar__titulo {
+    border-bottom: 1px solid grey;
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+
+
+
+.form-cadastrar {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.botao-cadastrar {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: rgb(255, 234, 73);
+    font-family: 'Trebuchet MS',  sans-serif;
+    grid-column: 2 / 2;
+    width: 50%;
+}
