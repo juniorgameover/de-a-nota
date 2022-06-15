@@ -1,17 +1,30 @@
 <?php
+require_once('./conexao.php');
+$pdo = new Conexao; 
+$result = $pdo->consultar('select * from tb_adm');
+echo "<pre>";
+print_r($result);
+echo "</pre>";
 
-$pdo = new PDO('mysql:host=localhost;dbname=db_de_a_nota','root','');
-$stmt = $pdo->prepare('select * from tb_adm');
+
+
+
+
+
+
+/*$pdo = new Conexao;
+$conexao = $pdo->conectar();
+$stmt = $conexao->prepare('select * from tb_adm');
 $stmt->execute();
 $result = $stmt->fetchAll();
 
 print_r($result);
+*/
 
 
 
 
-
-/* require_once('./conexao.php');
+/* 
 
 $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];

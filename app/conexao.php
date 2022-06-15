@@ -14,6 +14,15 @@ class Conexao {
         }
         return $conexao;
     }
+
+    public function consultar($query){
+        $conexao = $this->conectar();
+        $stmt = $conexao->prepare($query);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        return $result;
+
+    }
 }
 
 
