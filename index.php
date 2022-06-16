@@ -30,7 +30,14 @@
                     <input type="password"  name="senha" class="input-senha" required>
                     <input class="botao-entrar" type="submit" name="entrar" value="Entrar">
                 </form>
-            
+            <?php
+                
+                if(isset($_GET['validou']) && $_GET['validou'] == 0) {  ?>
+                <div>
+                    <h2>Usuário não cadastrado</h2>
+                </div>
+                
+                <?php } ?>
         </div>
 
     </main>

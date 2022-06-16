@@ -5,22 +5,21 @@ $username = $_POST['usuario'];
 $senha = $_POST['senha'];
 $usuarioValido = false;
 
+
+
 $buscaUsuarioSenha = "SELECT * FROM tb_adm WHERE username='$username' AND senha='$senha' ";
 
 $pdo = new Conexao; 
 $result = $pdo->consultar($buscaUsuarioSenha);
 
 if($result == null){
-    header('location:../index.php');
+    header('location:../index.php?validou=0');
 
 } elseif ($result[0]['username'] == $username && $result[0]['senha'] == $senha) {
     $usuarioValido = true;
     echo"usuário logado";
 }
- 
-echo "<pre>";
-print_r($usuarioValido);
-echo "</pre>";
+
 
 
 /*
