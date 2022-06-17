@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,11 +14,20 @@
 <body>
     <header class="cabecalho">
         <h1 class="cabecalho__titulo"><span>&#10004; </span>Dê a Nota</h1>
-        <a href="#" class="cadastre-se">Cadastre-se</a>
+        <a href="cadastro.php" class="cadastre-se">Cadastre-se</a>
         
     </header>
 
     <main class="container">
+        
+                <?php
+                
+                 if(isset($_GET['invalido']) && $_GET['invalido'] == 1) {  ?>
+               
+                    <span class="aviso-usuario-invalido">Usuário não cadastrado</span>
+                
+                <?php } ?>
+
         <h2 class="titulo-login">Login</h2>
 
         <div class="janela-login">
@@ -29,15 +37,9 @@
                     <label for="senha" class="label-senha">Senha</label>
                     <input type="password"  name="senha" class="input-senha" required>
                     <input class="botao-entrar" type="submit" name="entrar" value="Entrar">
+
                 </form>
-            <?php
-                
-                if(isset($_GET['validou']) && $_GET['validou'] == 0) {  ?>
-                <div>
-                    <h2>Usuário não cadastrado</h2>
-                </div>
-                
-                <?php } ?>
+            
         </div>
 
     </main>

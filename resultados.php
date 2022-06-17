@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['username'])) {
+        echo"<script>alert('Você precisa estar logado para visualizar a página.')</script>";
+        header('Location: ./index.php');
+    }else {
+       echo "logado com exito";
+       print_r($_SESSION['username']);
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

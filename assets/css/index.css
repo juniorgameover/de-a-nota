@@ -31,12 +31,21 @@ body {
     height: calc(100vh - 100px);
 }
 
+.aviso-usuario-invalido {
+    background-color: rgb(255, 48, 48);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
 .titulo-login {
     line-height: 100px;
     font-family: 'Trebuchet MS',  sans-serif;
     font-size: 2rem;
     margin-bottom: 10px;
     text-align: center;
+
 }
 
 .janela-login {
