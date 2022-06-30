@@ -39,7 +39,7 @@ body {
      background-color: beige;
  }
 
- li.itens-lista > a { /*selecionando os links filhos dos li que tem classe itens-lista*/
+ li.itens-lista > a, a { /*selecionando os links filhos dos li que tem classe itens-lista*/
      color: initial;
      text-decoration: none;
  }

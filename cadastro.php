@@ -12,7 +12,10 @@
 </head>
 <body>
     <header class="cabecalho">
-        <h1 class="cabecalho__titulo"><span>&#10004; </span>Dê a Nota</h1>
+       
+            <h1  class="cabecalho__titulo"><a href="./index.php"><span>&#10004; </span>Dê a Nota</h1></a>
+       
+        
         
         
     </header>
@@ -40,12 +43,12 @@
                     <input id="tipo-administrador" type="radio" name="tipo-usuario" value="administrador">
 
                     <label class="label-tipo-jurado" for="input-tipo-jurado" class="label-radio-jurado">Jurado</label>
-                    <input id="input-tipo-jurado" type="radio" name="tipo-usuario" value="jurado">    
+                    <input checked id="input-tipo-jurado" type="radio" name="tipo-usuario" value="jurado">    
 
                     <label for="cod-autorizacao" class="label-cod-autorizacao">Código de Autorização</label>   
                     <input type="text" placeholder="código numérico que autoriza o cadastro" name="cod-autorizacao" class="input-cod-autorizacao" required>
 
-                    <input class="botao-cadastrar" type="submit" name="entrar" value="Cadastrar">
+                    <input  disabled class="botao-cadastrar" type="submit" name="entrar" value="Cadastrar">
 
                 </form>
             
@@ -55,6 +58,8 @@
     <footer class="rodape">
 
     </footer>
-    
+<script src="./assets/js/valida_form_cadastro.js"> 
+
+</script>
 </body>
 </html>
