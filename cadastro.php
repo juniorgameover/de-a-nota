@@ -22,8 +22,8 @@
 
         <h2 class="titulo-cadastro">Cadastre-se</h2>
 
-        <div class="janela-cadastro">
-                <form class="janela-cadastro__form" method="POST" action="./app/autentica_bk.php">
+       
+                <form class="janela-cadastro__form" method="POST" action="./app/cadastro_bk.php">
                     <label for="nome-completo" class="label-nome-completo">Nome completo</label>
                     <input type="text" class="input-nome-completo" name="nome-completo" required>
 
@@ -36,22 +36,20 @@
                     <label for="confirma-senha" class="label-confirma-senha">Confirmação da Senha</label>   
                     <input type="password"  name="confirma-senha" class="input-confirma-senha" required>
 
-                    <label for="cod-autorizacao" class="label-cod-autorizacao">Código de Autorização</label>   
-                    <input type="text" placeholder="código numérico que autoriza o cadastro" name="cod-autorizacao" class="input-cod-autorizacao" required>
-
                     <label for="tipo-administrador" class="label-radio-adm">Administrador</label>
                     <input id="tipo-administrador" type="radio" name="tipo-usuario" value="administrador">
 
-                    <label class="input-tipo-jurado" for="input-tipo-jurado" class="label-radio-jurado">Jurado</label>
+                    <label class="label-tipo-jurado" for="input-tipo-jurado" class="label-radio-jurado">Jurado</label>
                     <input id="input-tipo-jurado" type="radio" name="tipo-usuario" value="jurado">    
 
+                    <label for="cod-autorizacao" class="label-cod-autorizacao">Código de Autorização</label>   
+                    <input type="text" placeholder="código numérico que autoriza o cadastro" name="cod-autorizacao" class="input-cod-autorizacao" required>
 
-
-                    <input class="botao-cadastrar" type="submit" name="entrar" value="Entrar">
+                    <input class="botao-cadastrar" type="submit" name="entrar" value="Cadastrar">
 
                 </form>
             
-        </div>
+       
 
     </main>
     <footer class="rodape">
